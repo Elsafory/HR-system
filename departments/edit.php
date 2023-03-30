@@ -27,7 +27,7 @@ if(isset($_GET['edit'])){
             <label class="m-2">Enter Department Name</label>
             <input type="text" value="<?= $row['name'] ?>" name="name" class="form-control">
         </div>
-        <button name="update" class="btn btn-warning">
+        <button name="update" class="mt-3 btn btn-warning">
             Update Data
         </button>
     </form>
