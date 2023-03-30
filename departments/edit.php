@@ -21,21 +21,17 @@ if(isset($_GET['edit'])){
     path('departments/list.php');
 }
 ?>
-<div class="container col-md-6">
-    <div class="card">
-        <div class="card-body">
-            <form method="POST">
-                <div class="form-group">
-                    <label class="m-2">Enter Department Name</label>
-                    <input type="text" value="<?= $row['name']?>" name="name" class="form-control">
-                </div>
-                <button name="update" class="btn btn-warning">
-                    Update Data
-                </button>
-            </form>
+<main class="main" id="main">
+    <form method="POST">
+        <div class="form-group">
+            <label class="m-2">Enter Department Name</label>
+            <input type="text" value="<?= $row['name'] ?>" name="name" class="form-control">
         </div>
-    </div>
-</div>
+        <button name="update" class="btn btn-warning">
+            Update Data
+        </button>
+    </form>
+</main>
 <?php 
 include '../shared/footer.php';
 include '../shared/script.php';
